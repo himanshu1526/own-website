@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+ *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(223, 218, 218); */
+    /* width:350px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 17px;
+    padding: 25px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{  
+    background-color: aliceblue;
+    width: 100vw;
+    padding: 23px;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+/* background-color: palevioletred;  */
+height: 58vh;
+width: 80vw;
+margin:144px auto;
+display: flex;
+justify-content: space-around;
+}
+.divInfo{   
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+}
+.hello{
+font-size: 3em;
+}
+.name{
+font-size: 3em;
+font-weight: bold;
+font-family: 'Fira Sans', sans-serif;
+}
+.about{
+font-size: 2.5em;
+}
+.moreabout{
+    font-size: 1em;
+    margin-top: 23px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.buttons{
+margin-top: 2.2em;
+font-size: 15px;
+}
+.btn{
+padding: 9px 14px;
+border-radius: 22px;
+color: white;
+background-color: rgb(83, 83, 255);
+font-weight: bold;
+font-size: 2em;
+cursor: pointer;
+margin: 3px 3px;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(83, 83, 255); 
+}
+.btn-sm{
+    font-size: 15px;
+    padding: 9px 14px;
+    margin: 10px 6px;
+}
+.divPic img{
+    height:58vh;
+}
+.contactform{
+    padding: 0 34px;
+    /* padding-top: 70px; */
+    font-family: 'Fira Sans', sans-serif;
+    margin: 35px 60px;
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    /* padding: 12px 0; */
+    /* text-align: center; */
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form input {
+    /* width: 25vw; */
+    border-radius: 8px;
+    margin: 6px 0 0 0 ;
+    padding: 5px;
+}
+.contactform form{
+    margin: 0px 40px ;
+    height: 100vh;
+}
+#emailHelp{
+    font-size: 13px;
+    color: midnightblue;
+    margin: 0px 8px;
+    padding: 3px 0 0 0 ;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 25px;
+    margin: 3px 0;
+}
+.blogItem{
+margin: 18px;
+font-family: 'Fira Sans', sans-serif;
+}
+.blogContainer{
+    margin: 30px 60px;
+}
+ h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+.intro{
+    margin: 30px 60px ;
+    height: 100vh;
+}
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+.skillConainer{
+    padding: 12px;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+.hundered{
+    width: 265px;
+    background-color: blueviolet;
+}
+.fifty{
+    width: 130px;
+    background-color: aqua;
+}
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+.sidebarGo{
+    position:absolute;
+    transform: translate(-443px, 0px);
+}
+
+.humburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.cross{
+    margin-left: 130px;
+    margin-top: 4px;
+}
+
+@media (max-width: 1050px) {
+   *{
+       /* background-color: rgb(210, 238, 238); */
+   }    
+    .divPic{
+        display: none;
+    }
+    .intro, .blogContainer, .contactform{
+        margin: 20px 10px;
+    }
+    .divInfo{
+        font-size: 12px;
+    }
+    .buttons{
+        font-size: 7px;
+    }
+  }
